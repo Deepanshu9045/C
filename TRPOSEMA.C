@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+ void main()
+{ int a[2][2],t[2][2],i,j;
+  clrscr();
+
+  printf("Enter the element of matrix:\n");
+  for(i=0;i<2;i++)
+  {for(j=0;j<2;j++)
+    {printf("Element-[%d][%d] :",i,j);
+     scanf("%d",&a[i][j]);
+    }
+  }
+  printf("\nThe matrix is=\n");
+  for(i=0;i<2;i++)
+  {printf("\n");
+   for(j=0;j<2;j++)
+    printf("%d\t",a[i][j]);
+
+   printf("\n");
+  }
+  for(i=0;i<2;i++)
+  {for(j=0;j<2;j++)
+   {t[i][j]=a[j][i];
+   }
+  }
+  printf("\nTranspose of matrix is=\n");
+  for(i=0;i<2;i++)
+  {printf("\n");
+   for(j=0;j<2;j++)
+    printf("%d\t",t[i][j]);
+
+   printf("\n");
+  }
+  getch();
+}
